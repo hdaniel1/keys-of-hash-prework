@@ -8,6 +8,7 @@ class Hash
           new.push(keys)
         end
     end
+  end
     new
   end
 end
