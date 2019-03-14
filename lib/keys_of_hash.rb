@@ -3,7 +3,7 @@ class Hash
     # code goes here
     new = []
     self.each do |keys, values|
-      return values
+      return keys
     end
     new
   end
