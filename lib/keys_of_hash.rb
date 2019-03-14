@@ -2,8 +2,11 @@ class Hash
   def keys_of(*arguments)
     # code goes here
     new = []
-    self.each do |keys, values|
-      return keys
+    arguments.each do |it|
+      self.each do |keys, values|
+        if it == values
+          new.push(keys)
+        end
     end
     new
   end
