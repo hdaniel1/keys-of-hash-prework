@@ -3,9 +3,7 @@ class Hash
     # code goes here
     new = []
     self.each do |keys, values|
-      if values == arguments
-        new.push(keys)
-      end
+      return values
     end
     new
   end
